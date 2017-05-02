@@ -1,3 +1,4 @@
-<body>
-    Bienvenue  {{ nomPrenom }}
-</body>
+{% extends "::base.html.twig" %}
+
+
+{% block body %} {{ parent() }} Bienvenue  {{ nomPrenom }}{% endblock %}
