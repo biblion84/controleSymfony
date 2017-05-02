@@ -6,6 +6,10 @@ traveller_travel_advisor_voyage:
     path:     /voyage
     defaults: { _controller: TravellerTravelAdvisorBundle:Default:voyage }
 
+traveller_travel_advisor_login:
+    path:     /login
+    defaults: { _controller: TravellerTravelAdvisorBundle:Default:login }
+
 traveller_travel_advisor_voyage_prenom:
     path:     /voyage/{votrePrenom}
     defaults: { _controller: TravellerTravelAdvisorBundle:Default:voyagePrenom }
@@ -17,4 +21,13 @@ traveller_travel_advisor_voyage_admin:
 traveller_travel_advisor_voyage_redirection:
     path:     /admin/redirection
     defaults: { _controller: TravellerTravelAdvisorBundle:Admin:redirect }
+
+traveller_travel_advisor_connection:
+    path:     /connection
+    defaults: { _controller: TravellerTravelAdvisorBundle:Default:connection }
+
+traveller_travel_advisor_afficher:
+    path:     /afficherMembre/{id}
+    defaults: { _controller: TravellerTravelAdvisorBundle:Default:afficher }
+
 
