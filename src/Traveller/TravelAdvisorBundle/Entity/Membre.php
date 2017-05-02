@@ -44,6 +44,21 @@ class Membre
 
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="mail", type="string")
+     */
+    private $mail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mdp", type="string")
+     */
+    private $mdp;
+
+
+    /**
      * Get id
      *
      * @return int
@@ -124,5 +139,52 @@ class Membre
     {
         return $this->created;
     }
-}
 
+    /**
+     * Set mail
+     *
+     * @param string $mail
+     *
+     * @return Membre
+     */
+    public function setMail($mail)
+    {
+        $this->mail = $mail;
+
+        return $this;
+    }
+
+    /**
+     * Get mail
+     *
+     * @return string
+     */
+    public function getMail()
+    {
+        return $this->mail;
+    }
+
+    /**
+     * Set mdp
+     *
+     * @param string $mdp
+     *
+     * @return Membre
+     */
+    public function setMdp($mdp)
+    {
+        $this->mdp = $mdp;
+
+        return $this;
+    }
+
+    /**
+     * Get mdp
+     *
+     * @return string
+     */
+    public function getMdp()
+    {
+        return $this->mdp;
+    }
+}
