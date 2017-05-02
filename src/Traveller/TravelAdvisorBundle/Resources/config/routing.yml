@@ -5,3 +5,8 @@ traveller_travel_advisor_homepage:
 traveller_travel_advisor_voyage:
     path:     /voyage
     defaults: { _controller: TravellerTravelAdvisorBundle:Default:voyage }
+
+traveller_travel_advisor_voyage_prenom:
+    path:     /voyage/{votrePrenom}
+    defaults: { _controller: TravellerTravelAdvisorBundle:Default:voyagePrenom }
+
