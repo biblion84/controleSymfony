@@ -10,3 +10,11 @@ traveller_travel_advisor_voyage_prenom:
     path:     /voyage/{votrePrenom}
     defaults: { _controller: TravellerTravelAdvisorBundle:Default:voyagePrenom }
 
+traveller_travel_advisor_voyage_admin:
+    path:     /admin/
+    defaults: { _controller: TravellerTravelAdvisorBundle:Admin:index }
+
+traveller_travel_advisor_voyage_redirection:
+    path:     /admin/redirection
+    defaults: { _controller: TravellerTravelAdvisorBundle:Admin:redirect }
+
