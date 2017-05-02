@@ -1,0 +1,7 @@
+traveller_travel_advisor_homepage:
+    path:   /
+    defaults: { _controller: TravellerTravelAdvisorBundle:Default:index }
+
+traveller_travel_advisor_voyage:
+    path:     /voyage
+    defaults: { _controller: TravellerTravelAdvisorBundle:Default:voyage }

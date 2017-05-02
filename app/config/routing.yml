@@ -1,3 +1,7 @@
+traveller_travel_advisor:
+    resource: "@TravellerTravelAdvisorBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
